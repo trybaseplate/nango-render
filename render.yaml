@@ -3,8 +3,9 @@ services:
       name: nango-server
       env: docker
       repo: https://github.com/NangoHQ/nango-render
-      plan: free 
+      plan: standard 
       branch: main
+      region: ohio
       envVars:
           - key: NANGO_DB_NAME
             fromDatabase:
@@ -30,4 +31,5 @@ databases:
     - name: nango-db
       databaseName: nango
       user: nango
-      plan: free 
+      plan: standard
+      region: ohio
