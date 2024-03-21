@@ -1,4 +1,4 @@
-FROM nangohq/nango-server:0.31.1
+FROM nangohq/nango-server:production
 
 ARG RENDER_EXTERNAL_URL
 ENV NANGO_SERVER_URL=$RENDER_EXTERNAL_URL
